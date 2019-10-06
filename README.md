@@ -57,6 +57,31 @@ ref: https://docs.ruby-lang.org/ja/latest/library/openssl.html#references
 - [symmetric-encryption](https://github.com/rocketjob/symmetric-encryption)
 - [active_record_encryption](https://github.com/alpaca-tc/active_record_encryption)
 
+# Appendix
+## CMAC (Cipher-based Message Authentication Code)
+- a block cipher-based message authentication code algorithm
+- ref: https://en.wikipedia.org/wiki/One-key_MAC
+
+## Stream Cipher
+- a symmetric key cipher
+- encrypt per bit or Byte
+- In practice, a digit is typically a bit and the combining operation an exclusive-or (XOR)
+- ref: https://en.wikipedia.org/wiki/Stream_cipher
+
+## Block Cipher
+- a symmetric key cipher
+- an input block of size n bits and a key of size k bits
+- yield an n-bit output block
+- need fixed length of blocks to encrypt
+- ref: https://en.wikipedia.org/wiki/Block_cipherp
+
+## Difference of Salt and Nonce
+- Salt is to convert same texts into different output values
+    - it prevent Rainbow Table Attack
+- Nonce ( Number used once ) is the randomized value ( General word )
+    - Nonce is related with each text
+- ref: https://medium.com/@fridakahsas/salt-nonces-and-ivs-whats-the-difference-d7a44724a447
+
 ## References
 - https://www.ipa.go.jp/security/rfc/RFC3602JA.html
 - https://proprivacy.com/guides/aes-encryption
