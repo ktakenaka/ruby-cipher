@@ -3,3 +3,4 @@ Bundler.require
 
 require "securerandom"
 require "openssl"
+require "miscreant"
