@@ -1,5 +1,4 @@
-require 'securerandom'
-require 'openssl'
+require_relative "init"
 
 # Generate Cipher key from key and salt with HKDF
 # ref: https://ruby-doc.org/stdlib-2.5.0/libdoc/openssl/rdoc/OpenSSL/KDF.html
